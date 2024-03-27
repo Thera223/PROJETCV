@@ -12,28 +12,35 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  width: 100%;
 }
 .partie-1 {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+  position: relative;
+  background-color: rgb(157, 165, 165);
 }
 .entete {
+  padding-top: 10px;
   background: black;
   border-bottom-left-radius: 180px;
   border-bottom-right-radius: 180px;
-  align-self: start;
+  /* align-self: start; */
+  width: 100%;
+  text-align: center;
 }
 .entete h1,
 .entete h4 {
   color: white;
   text-align: center;
 }
-img {
-  margin-left: 250px;
+.entete img {
+  /* margin-left: 250px; */
   border: 1px solid white;
-  border-radius: 50px;
-  width: 100px;
-  height: 100px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 .conteneur-form {
   background: black;
@@ -47,6 +54,7 @@ img {
 }
 .contact h2 {
   text-align: center;
+  margin-top: 50px;
 }
 .conteneur-form {
   text-align: center;
@@ -59,4 +67,14 @@ h2 {
   font-weight: 90O;
   font-family: inter;
   font-size: 20px;
+}
+.partie2{
+    background-color: rgb(250, 252, 252);
+    /* align-self: start; */
+  width: max-content;
+  text-align: left;
+  width: 900px;
+  position: relative;
+  size: 300px;
+}
 }
